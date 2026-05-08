@@ -13,7 +13,16 @@ public class MyWorld extends World {
         Owl owl = new Owl();
         addObject(owl, 300, 200);
         
+        createMath();
+    }
+    /**
+     * create new math for our owl to get smarter YAY at the top
+     */
+    public void createMath()
+    {
         Math math = new Math();
-        addObject(math, 300, 0);
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        addObject(math, x, y);
     }
 }
