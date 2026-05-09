@@ -44,6 +44,7 @@ public class Owl extends Actor
         removeTouching(Math.class); 
         MyWorld world = (MyWorld) getWorld();
         world.createMath();
+        world.increaseScore();
        }
     }
 }
