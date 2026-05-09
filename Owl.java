@@ -31,6 +31,19 @@ public class Owl extends Actor
         }
         
         //check if its touchign any math books
-        removeTouching(Math.class);
+        eat();
+    }
+    
+    /**
+     * Eat the math book and spawns a new book if book is eaten
+     */
+    public void eat()
+    {
+       if(isTouching(Math.class))
+       {
+        removeTouching(Math.class); 
+        MyWorld world = (MyWorld) getWorld();
+        world.createMath();
+       }
     }
 }
