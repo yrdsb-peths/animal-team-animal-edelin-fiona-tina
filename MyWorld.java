@@ -10,7 +10,7 @@ public class MyWorld extends World {
     public int score = 0;
     Label scoreLabel;
     public MyWorld() {
-        super(600, 400, 1);
+        super(600, 400, 1, false);
         
         //Create the owl object
         Owl owl = new Owl();
@@ -21,6 +21,15 @@ public class MyWorld extends World {
         addObject(scoreLabel, 50, 50);
         
         createMath();
+    }
+    
+    /**
+     * End the game and draw 'GameOver'
+     */
+    public void gameOver()
+    {
+        Label gameOverLabel = new Label("Game Over", 100);
+        addObject(gameOverLabel, 300, 200);
     }
     
     /**
