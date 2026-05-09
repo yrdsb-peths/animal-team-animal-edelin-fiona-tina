@@ -22,5 +22,12 @@ public class Math extends Actor
         // Add your action code here.
         setLocation(getX(), getY() + 1);
         
+        // Remove book and draw game over when book gets to bottom
+        MyWorld world = (MyWorld) getWorld();
+        if(getY() >= world.getHeight())
+        {
+            world.gameOver();
+            world.removeObject(this);
+        }
     }
 }
