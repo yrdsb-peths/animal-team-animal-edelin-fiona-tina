@@ -10,8 +10,13 @@ public class MyWorld extends World {
     public MyWorld() {
         super(600, 400, 1);
         
+        //Create the owl object
         Owl owl = new Owl();
         addObject(owl, 300, 200);
+        
+        //Create a label
+        Label scoreLabel = new Label(0, 20);
+        addObject(scoreLabel, 0, 0);
         
         createMath();
     }
