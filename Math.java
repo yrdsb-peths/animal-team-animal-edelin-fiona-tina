@@ -17,10 +17,13 @@ public class Math extends Actor
         image.scale(100, 150);
         setImage(image);
     }
+    int speed = 1;
     public void act()
     {
         // Add your action code here.
-        setLocation(getX(), getY() + 1);
+        int x = getX();
+        int y = getY() + speed;
+        setLocation(x, y);
         
         // Remove book and draw game over when book gets to bottom
         MyWorld world = (MyWorld) getWorld();
@@ -29,5 +32,10 @@ public class Math extends Actor
             world.gameOver();
             world.removeObject(this);
         }
+    }
+    
+    public void setSpeed(int spd)
+    {
+        speed = spd;
     }
 }
