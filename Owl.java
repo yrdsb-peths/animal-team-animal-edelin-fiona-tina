@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Owl extends Actor
 {
+    GreenfootSound owlSound = new GreenfootSound("owlhooting.mp3");
     /**
      * Act - do whatever the Owl wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -45,6 +46,7 @@ public class Owl extends Actor
         MyWorld world = (MyWorld) getWorld();
         world.createMath();
         world.increaseScore();
+        owlSound.play();
        }
     }
 }

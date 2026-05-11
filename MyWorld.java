@@ -11,7 +11,7 @@ public class MyWorld extends World {
     Label scoreLabel;
     public MyWorld() {
         super(600, 400, 1, false);
-        
+        setBackground("forest.jpg");
         //Create the owl object
         Owl owl = new Owl();
         addObject(owl, 300, 200);

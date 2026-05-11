@@ -15,7 +15,7 @@ public class Math extends Actor
     {
         GreenfootImage image = getImage();
         image.scale(50, 50);
-        setImage(image);
+        setImage("mathbook.jpg");
     }
     public void act()
     {
