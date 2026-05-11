@@ -17,7 +17,7 @@ public class Title extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        addObject(titleLabel, getWidth()/2, 200);
+        addObject(titleLabel, 270, 150);
         prepare();
     }
 
@@ -44,7 +44,7 @@ public class Title extends World
         addObject(owl,491,149);
         owl.setLocation(502,137);
         owl.setLocation(497,124);
-        Label label = new Label("Use <-- and --> to Move", 40);
+        Label label = new Label("Use \u2190 and \u2192 to Move", 40);
         addObject(label,266,275);
         label.setLocation(368,278);
         label.setLocation(294,260);
