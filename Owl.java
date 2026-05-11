@@ -9,8 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Owl extends Actor
 {
     GreenfootSound owlSound = new GreenfootSound("owlhooting.mp3");
-    GreenfootImage[] idleRight = new GreenfootImage[7];
-    GreenfootImage[] idleLeft = new GreenfootImage[7];
+    GreenfootImage[] idleRight = new GreenfootImage[6];
+    GreenfootImage[] idleLeft = new GreenfootImage[6];
     
     String facing = "right";
     SimpleTimer animationTimer = new SimpleTimer();
@@ -42,7 +42,7 @@ public class Owl extends Actor
     int imageIndex = 0;
     public void animateOwl()
     {
-        if(animationTimer.millisElapsed() < 200)
+        if(animationTimer.millisElapsed() < 100)
         {
             return;
         }
